@@ -1,0 +1,441 @@
+3
+Testing: (0, 0)
+value at (0, 0) (2) is less than value at (0, 1) (3)
+Will test: (0, 1), reef size: 1
+Finished all indexes connected to (0, 0)
+Testing: (0, 1)
+Finished all indexes connected to (0, 1)
+Testing: (1, 0)
+value at (1, 0) (1) is less than value at (0, 0) (2)
+Will test: (0, 0), reef size: 1
+Finished all indexes connected to (1, 0)
+Testing: (0, 0)
+value at (0, 0) (2) is less than value at (0, 1) (3)
+Will test: (0, 1), reef size: 2
+Finished all indexes connected to (0, 0)
+Testing: (0, 1)
+Finished all indexes connected to (0, 1)
+Testing: (5, 0)
+Finished all indexes connected to (5, 0)
+Testing: (6, 0)
+value at (6, 0) (3) is less than value at (5, 0) (4)
+Will test: (5, 0), reef size: 1
+value at (6, 0) (3) is less than value at (6, 1) (4)
+Will test: (6, 1), reef size: 2
+Finished all indexes connected to (6, 0)
+Testing: (5, 0)
+Finished all indexes connected to (5, 0)
+Testing: (6, 1)
+Finished all indexes connected to (6, 1)
+Testing: (7, 0)
+value at (7, 0) (2) is less than value at (6, 0) (3)
+Will test: (6, 0), reef size: 1
+Finished all indexes connected to (7, 0)
+Testing: (6, 0)
+value at (6, 0) (3) is less than value at (5, 0) (4)
+Will test: (5, 0), reef size: 2
+value at (6, 0) (3) is less than value at (6, 1) (4)
+Will test: (6, 1), reef size: 3
+Finished all indexes connected to (6, 0)
+Testing: (5, 0)
+Finished all indexes connected to (5, 0)
+Testing: (6, 1)
+Finished all indexes connected to (6, 1)
+Testing: (8, 0)
+value at (8, 0) (1) is less than value at (7, 0) (2)
+Will test: (7, 0), reef size: 1
+value at (8, 0) (1) is less than value at (8, 1) (2)
+Will test: (8, 1), reef size: 2
+Finished all indexes connected to (8, 0)
+Testing: (7, 0)
+value at (7, 0) (2) is less than value at (6, 0) (3)
+Will test: (6, 0), reef size: 3
+Finished all indexes connected to (7, 0)
+Testing: (8, 1)
+Finished all indexes connected to (8, 1)
+Testing: (6, 0)
+value at (6, 0) (3) is less than value at (5, 0) (4)
+Will test: (5, 0), reef size: 4
+value at (6, 0) (3) is less than value at (6, 1) (4)
+Will test: (6, 1), reef size: 5
+Finished all indexes connected to (6, 0)
+Testing: (5, 0)
+Finished all indexes connected to (5, 0)
+Testing: (6, 1)
+Finished all indexes connected to (6, 1)
+Testing: (9, 0)
+value at (9, 0) (0) is less than value at (8, 0) (1)
+Will test: (8, 0), reef size: 1
+value at (9, 0) (0) is less than value at (9, 1) (1)
+Will test: (9, 1), reef size: 2
+Finished all indexes connected to (9, 0)
+Testing: (8, 0)
+value at (8, 0) (1) is less than value at (7, 0) (2)
+Will test: (7, 0), reef size: 3
+value at (8, 0) (1) is less than value at (8, 1) (2)
+Will test: (8, 1), reef size: 4
+Finished all indexes connected to (8, 0)
+Testing: (9, 1)
+value at (9, 1) (1) is less than value at (8, 1) (2)
+Will test: (8, 1), reef size: 5
+value at (9, 1) (1) is less than value at (9, 2) (2)
+Will test: (9, 2), reef size: 6
+Finished all indexes connected to (9, 1)
+Testing: (7, 0)
+value at (7, 0) (2) is less than value at (6, 0) (3)
+Will test: (6, 0), reef size: 7
+Finished all indexes connected to (7, 0)
+Testing: (8, 1)
+Finished all indexes connected to (8, 1)
+Testing: (8, 1)
+Finished all indexes connected to (8, 1)
+Testing: (9, 2)
+Finished all indexes connected to (9, 2)
+Testing: (6, 0)
+value at (6, 0) (3) is less than value at (5, 0) (4)
+Will test: (5, 0), reef size: 8
+value at (6, 0) (3) is less than value at (6, 1) (4)
+Will test: (6, 1), reef size: 9
+Finished all indexes connected to (6, 0)
+Testing: (5, 0)
+Finished all indexes connected to (5, 0)
+Testing: (6, 1)
+Finished all indexes connected to (6, 1)
+Testing: (0, 1)
+Finished all indexes connected to (0, 1)
+Testing: (2, 1)
+Finished all indexes connected to (2, 1)
+Testing: (3, 1)
+value at (3, 1) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 1
+value at (3, 1) (7) is less than value at (2, 1) (8)
+Will test: (2, 1), reef size: 2
+Finished all indexes connected to (3, 1)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (2, 1)
+Finished all indexes connected to (2, 1)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (6, 1)
+Finished all indexes connected to (6, 1)
+Testing: (8, 1)
+Finished all indexes connected to (8, 1)
+Testing: (9, 1)
+value at (9, 1) (1) is less than value at (8, 1) (2)
+Will test: (8, 1), reef size: 1
+value at (9, 1) (1) is less than value at (9, 2) (2)
+Will test: (9, 2), reef size: 2
+Finished all indexes connected to (9, 1)
+Testing: (8, 1)
+Finished all indexes connected to (8, 1)
+Testing: (9, 2)
+Finished all indexes connected to (9, 2)
+Testing: (1, 2)
+Finished all indexes connected to (1, 2)
+Testing: (2, 2)
+value at (2, 2) (5) is less than value at (3, 2) (6)
+Will test: (3, 2), reef size: 1
+value at (2, 2) (5) is less than value at (1, 2) (8)
+Will test: (1, 2), reef size: 2
+value at (2, 2) (5) is less than value at (2, 3) (6)
+Will test: (2, 3), reef size: 3
+value at (2, 2) (5) is less than value at (2, 1) (8)
+Will test: (2, 1), reef size: 4
+Finished all indexes connected to (2, 2)
+Testing: (3, 2)
+value at (3, 2) (6) is less than value at (4, 2) (7)
+Will test: (4, 2), reef size: 5
+value at (3, 2) (6) is less than value at (3, 3) (7)
+Will test: (3, 3), reef size: 6
+value at (3, 2) (6) is less than value at (3, 1) (7)
+Will test: (3, 1), reef size: 7
+Finished all indexes connected to (3, 2)
+Testing: (1, 2)
+Finished all indexes connected to (1, 2)
+Testing: (2, 3)
+value at (2, 3) (6) is less than value at (3, 3) (7)
+Will test: (3, 3), reef size: 8
+value at (2, 3) (6) is less than value at (1, 3) (7)
+Will test: (1, 3), reef size: 9
+Finished all indexes connected to (2, 3)
+Testing: (2, 1)
+Finished all indexes connected to (2, 1)
+Testing: (4, 2)
+value at (4, 2) (7) is less than value at (5, 2) (8)
+Will test: (5, 2), reef size: 10
+value at (4, 2) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 11
+value at (4, 2) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 12
+Finished all indexes connected to (4, 2)
+Testing: (3, 3)
+value at (3, 3) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 13
+Finished all indexes connected to (3, 3)
+Testing: (3, 1)
+value at (3, 1) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 14
+value at (3, 1) (7) is less than value at (2, 1) (8)
+Will test: (2, 1), reef size: 15
+Finished all indexes connected to (3, 1)
+Testing: (3, 3)
+value at (3, 3) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 16
+Finished all indexes connected to (3, 3)
+Testing: (1, 3)
+value at (1, 3) (7) is less than value at (0, 3) (8)
+Will test: (0, 3), reef size: 17
+value at (1, 3) (7) is less than value at (1, 4) (8)
+Will test: (1, 4), reef size: 18
+value at (1, 3) (7) is less than value at (1, 2) (8)
+Will test: (1, 2), reef size: 19
+Finished all indexes connected to (1, 3)
+Testing: (5, 2)
+Finished all indexes connected to (5, 2)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (2, 1)
+Finished all indexes connected to (2, 1)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (0, 3)
+Finished all indexes connected to (0, 3)
+Testing: (1, 4)
+Finished all indexes connected to (1, 4)
+Testing: (1, 2)
+Finished all indexes connected to (1, 2)
+Testing: (3, 2)
+value at (3, 2) (6) is less than value at (4, 2) (7)
+Will test: (4, 2), reef size: 1
+value at (3, 2) (6) is less than value at (3, 3) (7)
+Will test: (3, 3), reef size: 2
+value at (3, 2) (6) is less than value at (3, 1) (7)
+Will test: (3, 1), reef size: 3
+Finished all indexes connected to (3, 2)
+Testing: (4, 2)
+value at (4, 2) (7) is less than value at (5, 2) (8)
+Will test: (5, 2), reef size: 4
+value at (4, 2) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 5
+value at (4, 2) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 6
+Finished all indexes connected to (4, 2)
+Testing: (3, 3)
+value at (3, 3) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 7
+Finished all indexes connected to (3, 3)
+Testing: (3, 1)
+value at (3, 1) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 8
+value at (3, 1) (7) is less than value at (2, 1) (8)
+Will test: (2, 1), reef size: 9
+Finished all indexes connected to (3, 1)
+Testing: (5, 2)
+Finished all indexes connected to (5, 2)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (2, 1)
+Finished all indexes connected to (2, 1)
+Testing: (4, 2)
+value at (4, 2) (7) is less than value at (5, 2) (8)
+Will test: (5, 2), reef size: 1
+value at (4, 2) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 2
+value at (4, 2) (7) is less than value at (4, 1) (8)
+Will test: (4, 1), reef size: 3
+Finished all indexes connected to (4, 2)
+Testing: (5, 2)
+Finished all indexes connected to (5, 2)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 1)
+Finished all indexes connected to (4, 1)
+Testing: (5, 2)
+Finished all indexes connected to (5, 2)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (9, 2)
+Finished all indexes connected to (9, 2)
+Testing: (0, 3)
+Finished all indexes connected to (0, 3)
+Testing: (1, 3)
+value at (1, 3) (7) is less than value at (0, 3) (8)
+Will test: (0, 3), reef size: 1
+value at (1, 3) (7) is less than value at (1, 4) (8)
+Will test: (1, 4), reef size: 2
+value at (1, 3) (7) is less than value at (1, 2) (8)
+Will test: (1, 2), reef size: 3
+Finished all indexes connected to (1, 3)
+Testing: (0, 3)
+Finished all indexes connected to (0, 3)
+Testing: (1, 4)
+Finished all indexes connected to (1, 4)
+Testing: (1, 2)
+Finished all indexes connected to (1, 2)
+Testing: (2, 3)
+value at (2, 3) (6) is less than value at (3, 3) (7)
+Will test: (3, 3), reef size: 1
+value at (2, 3) (6) is less than value at (1, 3) (7)
+Will test: (1, 3), reef size: 2
+Finished all indexes connected to (2, 3)
+Testing: (3, 3)
+value at (3, 3) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 3
+Finished all indexes connected to (3, 3)
+Testing: (1, 3)
+value at (1, 3) (7) is less than value at (0, 3) (8)
+Will test: (0, 3), reef size: 4
+value at (1, 3) (7) is less than value at (1, 4) (8)
+Will test: (1, 4), reef size: 5
+value at (1, 3) (7) is less than value at (1, 2) (8)
+Will test: (1, 2), reef size: 6
+Finished all indexes connected to (1, 3)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (0, 3)
+Finished all indexes connected to (0, 3)
+Testing: (1, 4)
+Finished all indexes connected to (1, 4)
+Testing: (1, 2)
+Finished all indexes connected to (1, 2)
+Testing: (3, 3)
+value at (3, 3) (7) is less than value at (4, 3) (8)
+Will test: (4, 3), reef size: 1
+Finished all indexes connected to (3, 3)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (4, 3)
+Finished all indexes connected to (4, 3)
+Testing: (6, 3)
+value at (6, 3) (6) is less than value at (7, 3) (7)
+Will test: (7, 3), reef size: 1
+Finished all indexes connected to (6, 3)
+Testing: (7, 3)
+value at (7, 3) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 2
+value at (7, 3) (7) is less than value at (7, 2) (8)
+Will test: (7, 2), reef size: 3
+Finished all indexes connected to (7, 3)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (7, 3)
+value at (7, 3) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 1
+value at (7, 3) (7) is less than value at (7, 2) (8)
+Will test: (7, 2), reef size: 2
+Finished all indexes connected to (7, 3)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (1, 4)
+Finished all indexes connected to (1, 4)
+Testing: (5, 4)
+Finished all indexes connected to (5, 4)
+Testing: (6, 4)
+value at (6, 4) (5) is less than value at (5, 4) (6)
+Will test: (5, 4), reef size: 1
+value at (6, 4) (5) is less than value at (7, 4) (6)
+Will test: (7, 4), reef size: 2
+value at (6, 4) (5) is less than value at (6, 3) (6)
+Will test: (6, 3), reef size: 3
+Finished all indexes connected to (6, 4)
+Testing: (5, 4)
+Finished all indexes connected to (5, 4)
+Testing: (7, 4)
+value at (7, 4) (6) is less than value at (8, 4) (7)
+Will test: (8, 4), reef size: 4
+value at (7, 4) (6) is less than value at (7, 3) (7)
+Will test: (7, 3), reef size: 5
+Finished all indexes connected to (7, 4)
+Testing: (6, 3)
+value at (6, 3) (6) is less than value at (7, 3) (7)
+Will test: (7, 3), reef size: 6
+Finished all indexes connected to (6, 3)
+Testing: (8, 4)
+value at (8, 4) (7) is less than value at (9, 4) (8)
+Will test: (9, 4), reef size: 7
+value at (8, 4) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 8
+Finished all indexes connected to (8, 4)
+Testing: (7, 3)
+value at (7, 3) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 9
+value at (7, 3) (7) is less than value at (7, 2) (8)
+Will test: (7, 2), reef size: 10
+Finished all indexes connected to (7, 3)
+Testing: (7, 3)
+value at (7, 3) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 11
+value at (7, 3) (7) is less than value at (7, 2) (8)
+Will test: (7, 2), reef size: 12
+Finished all indexes connected to (7, 3)
+Testing: (9, 4)
+Finished all indexes connected to (9, 4)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (7, 4)
+value at (7, 4) (6) is less than value at (8, 4) (7)
+Will test: (8, 4), reef size: 1
+value at (7, 4) (6) is less than value at (7, 3) (7)
+Will test: (7, 3), reef size: 2
+Finished all indexes connected to (7, 4)
+Testing: (8, 4)
+value at (8, 4) (7) is less than value at (9, 4) (8)
+Will test: (9, 4), reef size: 3
+value at (8, 4) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 4
+Finished all indexes connected to (8, 4)
+Testing: (7, 3)
+value at (7, 3) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 5
+value at (7, 3) (7) is less than value at (7, 2) (8)
+Will test: (7, 2), reef size: 6
+Finished all indexes connected to (7, 3)
+Testing: (9, 4)
+Finished all indexes connected to (9, 4)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (7, 2)
+Finished all indexes connected to (7, 2)
+Testing: (8, 4)
+value at (8, 4) (7) is less than value at (9, 4) (8)
+Will test: (9, 4), reef size: 1
+value at (8, 4) (7) is less than value at (8, 3) (8)
+Will test: (8, 3), reef size: 2
+Finished all indexes connected to (8, 4)
+Testing: (9, 4)
+Finished all indexes connected to (9, 4)
+Testing: (8, 3)
+Finished all indexes connected to (8, 3)
+Testing: (9, 4)
+Finished all indexes connected to (9, 4)
+[1, 2, 0, 0, 0, 0, 2, 3, 5, 9, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 19, 9, 3, 0, 0, 0, 0, 0, 0, 3, 6, 1, 0, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 12, 6, 2, 0]
+0
