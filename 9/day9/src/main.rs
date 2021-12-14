@@ -1,15 +1,14 @@
-use std::fs::File;
-use std::io::BufReader;
-use std::io::prelude::*;
-use std::vec::Vec;
 use std::collections::VecDeque;
+use std::fs::File;
+use std::io::prelude::*;
+use std::io::BufReader;
+use std::vec::Vec;
 
 #[derive(Debug)]
-struct Input
-{
-    width : i32,
+struct Input {
+    width: i32,
     height: i32,
-    heightmaps : Vec::<i8>
+    heightmaps: Vec<i8>,
 }
 
 fn get_input() -> Input {
@@ -19,41 +18,50 @@ fn get_input() -> Input {
     let mut bytes = Vec::<u8>::new();
     buf_reader.read_to_end(&mut bytes);
 
-
     let height = bytes.iter().filter(|b| **b == b'\n').count() as i32 + 1;
     let width = bytes.len() as i32 / height;
 
-    Input { width: width, height: height, heightmaps : bytes.iter().filter_map(|b| {
-        if *b != b'\n' { Some((*b - b'0') as i8) } else { None }
-    }).collect()}
+    Input {
+        width: width,
+        height: height,
+        heightmaps: bytes
+            .iter()
+            .filter_map(|b| {
+                if *b != b'\n' {
+                    Some((*b - b'0') as i8)
+                } else {
+                    None
+                }
+            })
+            .collect(),
+    }
 }
 
-
 struct ValidIndex {
-    width : i32,
-    height : i32,
-    x : i32,
-    y : i32,
-    called : i32,
+    width: i32,
+    height: i32,
+    x: i32,
+    y: i32,
+    called: i32,
 
-    normal : Vec::<i32>,
-    top_right : Vec::<i32>,
-    top_left : Vec::<i32>,
-    bottom_left : Vec::<i32>,
-    bottom_right : Vec::<i32>,
-    top_row : Vec::<i32>,
-    bottom_row : Vec::<i32>,
-    left_column : Vec::<i32>,
-    right_column : Vec::<i32>
+    normal: Vec<i32>,
+    top_right: Vec<i32>,
+    top_left: Vec<i32>,
+    bottom_left: Vec<i32>,
+    bottom_right: Vec<i32>,
+    top_row: Vec<i32>,
+    bottom_row: Vec<i32>,
+    left_column: Vec<i32>,
+    right_column: Vec<i32>,
 }
 
 impl ValidIndex {
-    fn reset(&mut self, x : i32, y : i32) {
+    fn reset(&mut self, x: i32, y: i32) {
         self.x = x;
         self.y = y;
         self.called = 0;
     }
-    fn new(width : i32, height: i32) -> ValidIndex {
+    fn new(width: i32, height: i32) -> ValidIndex {
         let called = 0;
         let normal = vec![1, -1, width, -width];
 
@@ -70,7 +78,12 @@ impl ValidIndex {
         let left_column = vec![1, -width, width];
         let right_column = vec![-1, -width, width];
 
-        ValidIndex { width, height, x, y, called,
+        ValidIndex {
+            width,
+            height,
+            x,
+            y,
+            called,
             normal,
             top_right,
             top_left,
@@ -79,18 +92,17 @@ impl ValidIndex {
             top_row,
             bottom_row,
             left_column,
-            right_column
+            right_column,
         }
     }
 
-    fn next(&mut self) -> Option::<(i32, i32)> {
+    fn next(&mut self) -> Option<(i32, i32)> {
         if self.called == 4 {
             return None;
         }
 
         let width = self.width;
         let height = self.height;
-
 
         let mut slice = &self.normal;
 
@@ -99,34 +111,26 @@ impl ValidIndex {
         if x == 0 {
             if y == 0 {
                 slice = &self.top_left;
-            }
-            else if y == height - 1 {
+            } else if y == height - 1 {
                 slice = &self.bottom_left;
-            }
-            else {
+            } else {
                 slice = &self.left_column;
             }
-        }
-        else if y == 0 {
+        } else if y == 0 {
             if x == width - 1 {
                 slice = &self.top_right;
-            }
-            else {
+            } else {
                 slice = &self.top_row;
             }
-        }
-        else if y == height - 1 {
+        } else if y == height - 1 {
             if x == width - 1 {
                 slice = &self.bottom_right;
-            }
-            else {
+            } else {
                 slice = &self.bottom_row;
             }
-        }
-        else if x == width - 1 {
+        } else if x == width - 1 {
             slice = &self.right_column;
-        }
-        else {
+        } else {
             slice = &self.normal;
         }
 
@@ -134,8 +138,7 @@ impl ValidIndex {
         let result = {
             if self.called < slice.len() as i32 {
                 Some(slice[self.called as usize])
-            }
-            else {
+            } else {
                 None
             }
         };
@@ -144,13 +147,15 @@ impl ValidIndex {
         if result.is_none() {
             return None;
         }
-        
-        Some((x + result.unwrap() % self.width, y + result.unwrap() / self.width))
+
+        Some((
+            x + result.unwrap() % self.width,
+            y + result.unwrap() / self.width,
+        ))
     }
 }
 
-fn part1(input : &Input) -> i32 {
-
+fn part1(input: &Input) -> i32 {
     let mut result = 0i32;
     let mut indexer = ValidIndex::new(input.width, input.height);
 
@@ -159,12 +164,12 @@ fn part1(input : &Input) -> i32 {
             let mut is_minima = true;
 
             indexer.reset(x, y);
-            
+
             loop {
                 if let Some((new_x, new_y)) = indexer.next() {
-                    is_minima &= (input.heightmaps[(x + input.width * y) as usize] < input.heightmaps[(new_x + input.width * new_y) as usize]);
-                }
-                else {
+                    is_minima &= (input.heightmaps[(x + input.width * y) as usize]
+                        < input.heightmaps[(new_x + input.width * new_y) as usize]);
+                } else {
                     break;
                 }
                 if !is_minima {
@@ -180,9 +185,7 @@ fn part1(input : &Input) -> i32 {
     result
 }
 
-
-fn part2(input : &Input) -> i32 {
-
+fn part2(input: &Input) -> i32 {
     let mut heightmaps = input.heightmaps.clone();
 
     let mut indexer = ValidIndex::new(input.width, input.height);
@@ -194,7 +197,6 @@ fn part2(input : &Input) -> i32 {
 
     for y in 0..input.height {
         for x in 0..input.width {
-
             if heightmaps[(x + width * y) as usize] == 9 {
                 continue;
             }
@@ -204,12 +206,11 @@ fn part2(input : &Input) -> i32 {
             let mut stack = VecDeque::<(i32, i32)>::new();
             indexer.reset(x, y);
 
-            
             loop {
                 if let Some((new_x, new_y)) = indexer.next() {
-                    is_minima &= (heightmaps[(x + width * y) as usize] < heightmaps[(new_x + width * new_y) as usize]);
-                }
-                else {
+                    is_minima &= (heightmaps[(x + width * y) as usize]
+                        < heightmaps[(new_x + width * new_y) as usize]);
+                } else {
                     break;
                 }
                 if !is_minima {
@@ -225,13 +226,11 @@ fn part2(input : &Input) -> i32 {
                         if heightmaps[(new_x + width * new_y) as usize] != 9 {
                             stack.push_back((new_x, new_y));
                         }
-                    }
-                    else {
+                    } else {
                         break;
                     }
                 }
 
-                
                 let mut visited = Vec::<i32>::new();
                 visited.push(x + y * width);
 
@@ -244,16 +243,22 @@ fn part2(input : &Input) -> i32 {
                     loop {
                         if let Some((new_x, new_y)) = indexer.next() {
                             if heightmaps[(new_x + width * new_y) as usize] != 9
-                                && heightmaps[(new_x + width * new_y) as usize] > heightmaps[(target_x + width * target_y) as usize]
-                                && visited.iter().find(|x| **x == (new_x + width * new_y)).is_none() {
-
-                                
-                                if stack.iter().find(|x| x.0 == new_x && x.1 == new_y).is_none() {
+                                && heightmaps[(new_x + width * new_y) as usize]
+                                    > heightmaps[(target_x + width * target_y) as usize]
+                                && visited
+                                    .iter()
+                                    .find(|x| **x == (new_x + width * new_y))
+                                    .is_none()
+                            {
+                                if stack
+                                    .iter()
+                                    .find(|x| x.0 == new_x && x.1 == new_y)
+                                    .is_none()
+                                {
                                     stack.push_back((new_x, new_y));
                                 }
                             }
-                        }
-                        else {
+                        } else {
                             break;
                         }
                     }
@@ -279,9 +284,7 @@ fn part2(input : &Input) -> i32 {
         }
     }
 
-
     max.iter().product()
-
 }
 
 fn main() {
