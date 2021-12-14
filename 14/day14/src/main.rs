@@ -20,13 +20,12 @@ fn get_input() -> Input {
 
     let lines = buf_reader.lines().filter_map(|x| x.ok()).collect::<Vec::<String>>();
 
-    let protein : HashMap::<Pair, i64> = 
+    let mut protein = HashMap::<Pair, i64>::new();
                     lines
                         .iter().take(1).next().unwrap()
                         .as_bytes()
                         .windows(2)
-                        .map(|c| (c.iter().map(|cc| *cc as char).collect(), 1))
-                        .collect();
+                        .for_each(|c| (*protein.entry(c.iter().map(|cc| *cc as char).collect()).or_insert(0) += 1));
 
     let mappings = 
                     lines
