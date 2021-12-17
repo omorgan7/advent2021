@@ -12,35 +12,36 @@ struct Input {
 
 fn get_input() -> Input {
     let file = File::open("input.txt").unwrap();
-    let file1 = File::open("input.txt").unwrap();
-    let buf_reader = BufReader::new(file);
-    let buf_reader1 = BufReader::new(file1);
-
-    let patterns = buf_reader
+    let lines = BufReader::new(file)
         .lines()
-        .map(|line| {
-            let unwrapped = line.unwrap();
-            let mut parts = unwrapped.split(" | ");
-            parts
-                .nth(0)
-                .unwrap()
-                .split(" ")
-                .map(|word| String::from(word))
-                .collect()
+        .filter_map(|s| s.ok())
+        .collect::<Vec<String>>();
+
+    let patterns = lines
+        .iter()
+        .filter_map(|line| {
+            let mut parts = line.split(" | ");
+            Some(
+                parts
+                    .nth(0)?
+                    .split(" ")
+                    .map(|word| String::from(word))
+                    .collect(),
+            )
         })
         .collect();
 
-    let digits = buf_reader1
-        .lines()
-        .map(|line| {
-            let unwrapped = line.unwrap();
-            let mut parts = unwrapped.split(" | ");
-            parts
-                .nth(1)
-                .unwrap()
-                .split(" ")
-                .map(|word| String::from(word))
-                .collect()
+    let digits = lines
+        .iter()
+        .filter_map(|line| {
+            let mut parts = line.split(" | ");
+            Some(
+                parts
+                    .nth(1)?
+                    .split(" ")
+                    .map(|word| String::from(word))
+                    .collect(),
+            )
         })
         .collect();
 
@@ -323,6 +324,7 @@ fn part2(input: &Input) -> i32 {
 
 fn main() {
     let input = get_input();
+    println!("{:?}", input);
     println!("{}", part1(&input));
     println!("{}", part2(&input));
 }
